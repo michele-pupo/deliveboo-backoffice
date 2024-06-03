@@ -1,0 +1,49 @@
+.jumbotron{
+    background-color: #3dc4df;
+    overflow-x: hidden;
+
+    height: calc(100vh - 126px);
+
+    .welcome_text{
+        h1{
+            font-size: 100px;
+            color: #F6F3E4;
+            font-family:"Pacifico", cursive;
+            text-shadow:2px 4px #fd6055ba;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    .logo_laravel{
+        .slide{
+
+            height: 125%;
+            transform: rotate(20deg);
+            -webkit-animation: slide 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) .7s both;
+	        animation: slide 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) .7s both;
+
+            @-webkit-keyframes slide {
+                0% {
+                -webkit-transform: translateX(100vw);
+                        transform: translateX(100vw);
+                }
+                100% {
+                -webkit-transform: translateX(-100px);
+                        transform: translateX(-100px);
+                }
+            }
+            @keyframes slide {
+                0% {
+                -webkit-transform: translateX(100vw);
+                        transform: translateX(100vw);
+                }
+                100% {
+                -webkit-transform: translateX(-100px);
+                        transform: translateX(-100px);
+                }
+            }
+  
+        }
+    }
+}

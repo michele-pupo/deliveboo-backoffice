@@ -1,0 +1,48 @@
+@use "../variables/variables" as *;
+
+
+.containerIm{
+    height: 95px;
+}
+.cards{
+    background-color: #f3d7bce8;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.titleReg{
+    
+    font-family: $mibery-font;
+   
+    color: #d62300 ;
+}
+
+
+.register-box{
+    
+   
+    color: #d62300 ;
+    font-weight: bolder;
+
+    padding-bottom: 30px;
+
+    .card{
+        background-color: #f3d9bf;
+
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        
+    }
+
+    h1{
+        color: #d62300 ;
+    }
+    h3{
+        color: black ;
+        font-weight: bold;
+    }
+    label{
+        border: 1px rgb(85, 85, 85);
+    }
+
+}
+

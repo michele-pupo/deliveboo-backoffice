@@ -1,0 +1,48 @@
+// Colori 
+
+$primaryColor: #3dc4df;
+$color-brown: #713616;
+$color-red: #d62300;
+$color-cream: #f8ebde;
+$color-mustard: #ffaa01;
+$color-green: #279647;
+
+
+// colori extra
+$color-primary: #27ae60; /* Verde Vivaio */
+$color-secondary: #e67e22; /* Arancione Carota */
+$color-accent: #f1c40f; /* Giallo Limone */
+$color-support: #e74c3c; /* Rosso Pomodoro */
+$color-background-primary: #ffffff; /* Bianco Puro */
+$color-background-secondary: #ecf0f1; /* Grigio Chiaro */
+$color-text-primary: #2c3e50; /* Grigio Antracite */
+
+// Definizione del mixin per utilizzare i colori
+
+@mixin usa-colori($color) {
+    @if $color == primary {
+      color: $primaryColor;
+      
+    } @else if $color == brown {
+      color: $color-brown;
+    } @else if $color == red {
+      color: $color-red;
+    } @else if $color == cream {
+      color: $color-cream;
+    } @else if $color == mustard {
+      color: $color-mustard;
+    } @else if $color == green {
+      color: $color-green;
+    } @else {
+      @warn "Colore sconosciuto: #{$color}";
+      color: inherit;
+    }
+  }
+
+  @font-face {
+    font-family: Mibery;
+    src: url(/public/storage/font/Mibery.ttf);
+  }
+  
+  // font
+  $mibery-font: 'Mibery', sans-serif;

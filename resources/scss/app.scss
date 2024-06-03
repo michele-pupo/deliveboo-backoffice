@@ -1,0 +1,151 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import '../scss/partials/welcome.scss';
+@import '../scss/partials/login.scss';
+@import '../scss/partials/register.scss';
+@import '../scss/partials/profile.scss';
+
+@import '../scss/partials/index.scss';
+@import '../scss/partials/dashboard.scss';
+@import '../scss/partials/create.scss';
+@import '../scss/partials/show.scss';
+@import '../scss/partials/edit.scss';
+
+@import './variables/variables';
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// NAVBAR
+nav {
+    background-color: $color-cream;
+    color: $color-red;
+    font-size: 25px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    z-index: 99;
+
+    ul {
+        li {
+            color: $color-red;
+
+            transition: .4s ease;
+
+            :hover {
+                transition: .4s ease;
+                transform: scale(1.2);
+            }
+        }
+    }
+    
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+
+    .my-burger{
+        color: #d62300;
+
+        font-size: 30px;
+    }
+}
+
+.navbar-nav {
+    a {
+        color: $color-red;
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+
+// MAIN CONTAINER
+.all {
+    background-color: $color-cream;
+}
+
+// FOOTER
+.my-footer {
+    min-height: 450px;
+    background-color: #f3ad6c;
+
+    .my-col {
+        border-radius: 25px;
+        box-shadow: -10px -10px 30px 0 #fec57f, 10px 10px 30px 0 #cc894c;
+        border: 1px solid #f3ad6c;
+    }
+
+    h5 {
+        color: #713616;
+        font-family: $mibery-font;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    a,
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        color: $color-cream;
+    }
+}
+
+.small-image {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.box-icon {
+
+    i:nth-of-type(1):hover {
+        color: #1877f2;
+    }
+
+    i:nth-of-type(2):hover {
+
+        color: #000000;
+    }
+
+    i:nth-of-type(3):hover {
+        color: rgb(176, 39, 194);
+    }
+
+    i:nth-of-type(4):hover {
+        color: #0077B5;
+    }
+
+    i {
+        cursor: pointer;
+        font-size: 25px;
+        transition: .2s linear;
+        color: $color-cream;
+
+        &:hover {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            border-radius: 3px;
+            transform: scale(1.2);
+        }
+    }
+}
+
+// barra di scorrimento
+.my-scrollbar {
+    overflow-y: auto;
+    max-height: 700px;
+}
+
+.my-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.my-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cambia colore se necessario */
+    border-radius: 10px;
+}
+
+.my-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cambia colore se necessario */
+}
